@@ -70,7 +70,9 @@ canvas {
 				 }else{
 					 $("#roleList").empty();
 					 var roles=result.roleList;
-					 for(var i=0;i<roles.length;i++){ if(i==0){ $("#roleList").append("<input type='radio' checked=true name='role' value='"+roles[i].id+"'/>"+roles[i].name+"&nbsp;&nbsp;");
+					 for(var i=0;i<roles.length;i++){ 
+						 if(i==0) { 
+							 $("#roleList").append("<input type='radio' checked=true name='role' value='"+roles[i].id+"'/>"+roles[i].name+"&nbsp;&nbsp;");
 						 }else{
 							 $("#roleList").append("<input type='radio' name='role' value='"+roles[i].id+"'/>"+roles[i].name+"&nbsp;&nbsp;");
 						 }
